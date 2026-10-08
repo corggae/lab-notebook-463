@@ -6,27 +6,50 @@
     <title>Exercise 01 - Audit</title>
   </head>
   <body>
-    <form>
-      Name:<br />
-      <input type="text" name="name" /><br /><br />
-      Address:<br />
-      <input type="text" name="address" />
-      <br /><br />
-      City:<br />
-      <input type="text" name="city" />
-      <br /><br />
-      Zip Code:<br />
-      <input type="text" name="zip" />
-      <br /><br />
-      Credit Card Type:<br />
-      <input type="radio" name="card" value="visa" /> Visa<br />
-      <input type="radio" name="card" value="mastercard" /> MasterCard<br />
-      <input type="radio" name="card" value="amex" /> American Express<br /><br />
-      Credit Card Number:<br />
-      <input type="text" name="cc_number" /><br /><br />
-      CVC:<br />
-      <input type="text" name="cvv" /><br /><br />
-      <input type="button" value="Submit" />
-    </form>
+    <main>
+      <form>
+        <h1>Enter your Information</h1>
+        <div>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" />
+        </div>
+        <br /><br />
+        <div>
+          <label for="address">Address:</label><br />
+          <input type="text" id="address" name="address" />
+        </div>
+        <br /><br />
+        <div>
+          <label for="city">City:</label><br />
+          <input type="text" id="city" name="city" />
+        </div>
+        <br /><br />
+        <div>
+          <label for="zip">Zip Code:</label><br />
+          <input type="text" id="zip" name="zip" />
+        </div>
+        <br /><br />
+        <fieldset>
+          <legend>Credit Card Type:</legend><br />
+          <input type="radio" id="visa" name="card" value="visa" />
+          <label for="visa">Visa</label><br />
+
+          <input type="radio" id="master" card" value="mastercard" /> 
+          <label for="master">MasterCard</label><br />
+
+          <input type="radio" id="amex" name="card" value="amex" />
+          <label for="amex"> American Express</label><br /><br />
+        </fieldset>
+        <div>
+          <label for="number">Credit Card Number:</label><br />
+          <input type="text" id="number" name="cc_number" /><br /><br />
+        </div>
+        <div>
+          <label for="cvc">CVC:</label><br />
+          <input type="text" id="cvc" name="cvv" /><br /><br />
+        </div>
+        <input type="button" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>
