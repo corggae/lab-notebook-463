@@ -1,6 +1,7 @@
 :root {
   --purple: #800080;
   --light-text-color: #fefefe;
+  --lavender: lavender;
 }
 
 body {
@@ -16,9 +17,21 @@ body {
   color: var(--light-text-color);
   font-size: 1.75rem;
   text-align: center;
+
+  display: flex;
+  align-items: center;
 }
 
 h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--lavender);
+  align-items: center;
+  height: 100vh;
   text-align: center;
 }
 
