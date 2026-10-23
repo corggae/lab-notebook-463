@@ -1,1 +1,140 @@
-/* Add your CSS code here  */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Books.html*/
+
+:root {
+    --ice-blue-juvie: #8fbcd4;
+    --gothic-gray-blue: #6f8796;
+    --dark-slate-infinity: #1f2a33;
+    --gray-border: #dfdfdf;
+    --text-color: #292929;
+    --table-darker-background: #e7e7e7;
+    --table-lighter-background: #fafafaf3;
+    --background: #f0f0f0;
+
+}
+
+.body {
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background);
+}
+
+.cinzel {
+    font-family:'Cinzel', Cinzel;
+}
+
+/*navigation area 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*<nav> */
+.navigation {
+    background: var(--dark-slate-infinity);
+    padding: 10px;
+}
+
+/*all the navigation links <ul>*/
+.nav-links-list {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+/*each list item <li>*/
+.nav-link-item {
+    display: inline-block;
+    margin: 0 .5rem
+    /* padding: 14px 16px */
+}
+/*navigation actual links <a>*/
+.nav-link {
+    color: var(--ice-blue-juvie);
+    text-decoration: none;
+    margin: 0 .5rem;
+    padding: .3rem .5rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background-color: var(--ice-blue-juvie);
+    color: var(--dark-slate-infinity);
+    transition:
+        background .2s, color .2s;
+}
+
+/*Main Area
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.main-area {
+    margin: 0 auto;
+    max-width: 800 px;
+    margin-bottom: 50px;
+    padding: 0 4rem;
+
+}
+.main-heading {
+    color: var(--gothic-gray-blue);
+    text-align: center;
+}
+
+.books-heading {
+    border-bottom: 2px solid var(--gray-border);
+    padding-bottom: .2rem;
+}
+
+.section {
+    margin-top: 2rem;
+}
+
+/*ASOIAF Books
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.books-list li{
+    margin-bottom: .5rem;
+    margin-left: .01rem;
+}
+
+.books-list li > ol {
+    margin-top: .4rem;
+}
+
+/*Covers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.books-images {
+    text-align: center;
+}
+
+.cover-image {
+    border-radius: 5px;
+    transition: transform .2s ease;
+}
+
+.cover-image:hover {
+    transform: scale(1.1);
+}
+
+/*Table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.books-table {
+    border-collapse: collapse;
+}
+.table-headings {
+    background-color: var(--table-darker-background);
+}
+
+.books-table tr:nth-child(odd){
+    background-color: var(--table-lighter-background)
+}
+
+.books-table th, .books-table td {
+    border: 1px solid var(--gray-border);
+    text-align: center;
+    padding: .5rem;
+}
+
+.books-table tfoot{
+    font-weight: bold;
+}
