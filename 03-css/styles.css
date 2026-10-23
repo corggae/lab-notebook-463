@@ -10,7 +10,14 @@ Books.html*/
     --text-color: #292929;
     --table-darker-background: #e7e7e7;
     --table-lighter-background: #fafafaf3;
+
     --background: #f0f0f0;
+
+    --roth-blue: #121252;
+    --roth-darker-blue: #0a0a38;
+    --roth-background: #f7f8fd;
+    --roth-gray: #e6e5e5;
+    --roth-darker-gray: #cbcbcb;
 
 }
 
@@ -137,4 +144,97 @@ Books.html*/
 
 .books-table tfoot{
     font-weight: bold;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+form.html*/
+
+/*Main Area
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.body {
+    background-color: var(--roth-blue);
+}
+
+.main-form {
+    max-width: 420px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: var(--roth-background);
+}
+
+.blue {
+    color:var(--roth-blue);
+}
+
+.form-label {
+    display: inline-block;
+    width: 48%;
+}
+
+.form-element {
+    margin-bottom: .5rem;
+}
+
+.form-element:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.form-input {
+    display: inline-block;
+    width: 44%;
+    border: 1px solid var(--roth-gray);
+    border-radius: 6px;
+    padding: .5rem;
+}
+.roth-title {
+    color: var(--roth-blue);
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    width: 49%;
+    padding: .65rem 1rem;
+    border-radius: 8px;
+    border: 0;
+}
+
+.form-radios {
+    margin-left: 40px;
+    margin-bottom: 0.75rem;
+}
+
+.submit-button {
+    background-color: var(--roth-blue);
+    color: var(--roth-background);
+}
+
+.reset-button {
+    background-color: var(--roth-gray);
+}
+
+.submit-button:hover {
+    background-color: var(--roth-darker-blue);
+}
+
+.reset-button:hover {
+    background-color: var(--roth-darker-gray);
+}
+
+.note {
+    margin-top: 2rem;
+    font-size: .8rem;
+}
+
+.note a{
+    color: var(--roth-blue);
+}
+
+.fieldset-max {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
