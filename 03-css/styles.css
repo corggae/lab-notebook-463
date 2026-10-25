@@ -234,7 +234,7 @@ form.html*/
 }
 
 .fieldset-max {
-    border: none;
+    border: 0;
     padding: 0;
     margin: 0;
 }
